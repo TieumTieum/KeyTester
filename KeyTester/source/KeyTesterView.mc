@@ -43,7 +43,7 @@ class KeyTesterView extends Ui.View {
         if (keyPressed != -2) {
             dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLACK);
             dc.drawText(20, 50, Gfx.FONT_MEDIUM, "Key Pressed", Gfx.TEXT_JUSTIFY_LEFT);
-            dc.drawText(25, 80, Gfx.FONT_MEDIUM, keyPressed, Gfx.TEXT_JUSTIFY_LEFT);
+            dc.drawText(25, 80, Gfx.FONT_MEDIUM, keyPressed.format("%i"), Gfx.TEXT_JUSTIFY_LEFT);
         }
     }
 
